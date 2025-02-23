@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import VisitTable from './components/VisitTable';
-import FileUpload from './components/VisitTable';
+import FileUpload from './components/FileUpload';
 // import logo from './logo.svg';
 import './App.css';
 
