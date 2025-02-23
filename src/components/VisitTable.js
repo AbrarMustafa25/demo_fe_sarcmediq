@@ -24,7 +24,6 @@ const VisitTable = ({visits}) =>{
                     </tr>
                 </thead>
                 <tbody>
-                    {visits}
                     {visits.map((visit_item) => (
                         <tr key={visit_item.id}>
                             <td>{visit_item.patient.mr_number}</td>
