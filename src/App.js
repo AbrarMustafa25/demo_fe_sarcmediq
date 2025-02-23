@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import VisitTable from './components/VisitTable';
+import FileUpload from './components/VisitTable';
 // import logo from './logo.svg';
 import './App.css';
 
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Patient Records</h1>
+      <FileUpload onUpload={fetchVisits} />
       <VisitTable visits={visits} />
     </div>
   );
