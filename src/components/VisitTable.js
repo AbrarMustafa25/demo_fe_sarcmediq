@@ -26,10 +26,11 @@ const VisitTable = ({visits}) =>{
                 <tbody>
                     {visits}
                     {visits.map((visit_item) => (
-                        <tr>
-                            <th>
-                                ...
-                            </th>
+                        <tr key={visit_item.id}>
+                            <td>{visit_item.patient.mr_number}</td>
+                            <td>{visit_item.patient.first_name} {visit_item.patient.last_name}</td>
+                            <td>{new Date(visit_item.date).toLocaleString()}</td>
+                            <td>{visit_item.reason}</td>
                         </tr>
                     ))}
                 </tbody>
